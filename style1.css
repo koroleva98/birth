@@ -1,0 +1,53 @@
+/* Resetting default browser styles */
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Đảm bảo hình nền phủ kín toàn bộ trang */
+    background-repeat: no-repeat; /* Hình nền sẽ không lặp lại */
+}
+p {
+    text-align:justify;
+    margin: 15px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 20px;
+    border: 0; 
+    text-align: center;
+} 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+/* Thêm một số kiểu cơ bản cho hiệu ứng đánh chữ */
+.typewriter p {
+    overflow: hidden; /* Ẩn các ký tự khi chúng được "đánh máy" */
+    border-right: solid black; /* Thêm dấu gạch đứng sau chữ cuối cùng */
+    margin: 0 auto; /* Căn giữa cho tiêu đề */
+    /*letter-spacing: .15em;  Tạo khoảng cách giữa các chữ */
+    animation: 
+      typing 7s steps(90, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* Hiệu ứng đánh máy */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Hiệu ứng nhấp nháy cho dấu gạch đứng */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+  
